@@ -126,3 +126,10 @@ def winner (board)
   win_index_1 = result[0]
   return board[win_index_1]
 end
+
+def play(board)
+  until over?(board) do
+    turn(board)
+  end
+  
+end
